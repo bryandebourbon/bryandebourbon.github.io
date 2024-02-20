@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan de Bourbon </title>
+    <title>Bryan de Bourbon</title>
+    <meta property="og:image" content="https://bryandebourbon.github.io/preview.png" />
 </head>
 <body>
     <header>
@@ -18,10 +19,10 @@
             <h3 style="margin-bottom: 0;">Lead Software Engineer at Photo Sharing Startup (Jan 2023 - Aug 2023)</h3>
             <ul>
                 <li>
-                    Managed AWS server infrastructure, including a PostgreSQL RDS. Instituted server-logging and server-swapping protocols to maintain high uptime. Used a React Native layer to build the UI for the app, and a native Swift/Android background threads for speedy uploading and delivery to photo delivery for users.
+                    Managed AWS server infrastructure, including a PostgreSQL RDS. Instituted server-logging and server-swapping protocols to maintain high uptime. Used a React Native layer to build the UI for mobile apps, and a Device Specific Layer in native Swift/Android for a fast photo tag, compress, encrypt, upload pipline.
                 </li>
                 <li>
-                    Trusted with implementing advanced features like context based notifications (for sharing reminders based on GPS, timezone change, etc), developing performant and creative image upload algorithms, photo nudity detection, MySQL for on device data persistence, and redesigning the app for Android (to make photo sharing instantaneous)
+                    Trusted with implementing advanced features like context based notifications (for sharing reminders based on GPS, timezone change, etc), developing performant and creative image upload algorithms, photo object detection apis, MySQL for on device data persistence, and redesigning the app for Android (to make photo sharing instantaneous)
                 </li>
                 <li>
                     Conducted user experience trials to research where clients had misunderstandings in app controls. Used customer feedback and telemetry to develop UI layouts and app features that could increase user understanding and retention.
@@ -34,12 +35,12 @@
             <h3 style="margin-bottom: 0;" >Software Engineer at Microsoft (Oct 2018 – Oct 2022) </h3>
             <ul>
                 <li>
-                    On a full-stack experimental apps team, built MSPaint for web, the Viva Learning app for Teams, and other apps using functional React, GraphQL and Typescript. Enforced app Unit Testing via Jest, and reorganized JS and CSS with modern design standards like the SOLID principles and other OOP paradigms.
+                    On a full-stack experimental apps team, built MSPaint for web, the Viva Video Learning app for Teams, and other apps using functional React, GraphQL and Typescript. Enforced app Unit Testing via Jest, and reorganized JS and CSS with modern design standards based in SOLID principles.
                 </li>
                 <li>
-                    Used Azure to host Microsoft Teams Bots, Servers and a PostgreSQL database. These bots sent HTTP requests with JSON to various Azure endpoints that ran CRUD operations on the database. Also improved app performance via front-end caching and optimistic loading.</li>
+                    Used Azure to host a PostgreSQL database and a Server with GraphQL API endpoints. Also improved client app experience by implementing front-end caching and optimistic loading.</li>
                 <li>
-                    Ran user studies to justify developer time on potential customer needs. Added user telemetry, server logging, and experimental flighting gates for dashboards to visualize daily active users, crash rate, etc.
+                    Ran user studies to justify developer time on potential customer needs. Added user telemetry, server logging, and experimental flighting gates for dashboards to visualize daily active users, and crash rates.
                 </li>
             </ul>
         </article>
@@ -54,25 +55,26 @@
                     <ul>
                     <li>
                         <strong>
-                            <a href="https://bryandebourbon.github.io/eMusicReader/">
-                                Word-Wrap Music Reader:
+                            <a href="https://github.com/bryandebourbon/eMusicReader">
+                                Digital Glyph-Wrapping Sheet Music Editor
                             </a>
                         </strong>
-                            Developing an accessible music education app with resizable, high-contrast music notes and dynamic SVG for low-vision and young learners, powered by modern CSS, flex box, and vanilla JavaScript for interactive sheet music rendering across all web-enabled devices.
+                            Developing a sheet music reading app that works with the dimensions of any screen, and has modern features, like word wrap, and accessible features like large-font high-contrast SVG notes for low-vision and young learners. Powered by modern CSS, and vanilla JavaScript for interactive sheet music rendering across all web-enabled devices.
+                            React Navite app coming soon...
                     </li>
                 
                     <li>
                         <strong>
                             <a href="https://github.com/bryandebourbon/PicoCal">
-                                PicoCal for Apple Watch (2024 Beta)
+                                PicoCal for Apple Watch (2024 App Store Beta)
                             </a>
                         </strong>
                             A calendar app for iPhone and Apple Watch Widgets, integrating URLSession and Codable for GitHub API data to display commit history, alongside EventKit and HealthKit for comprehensive appointment and fitness tracking directly on the watch face.
                     </li>
                     <li>
                         <strong>
-                            <a href="https://testflight.apple.com/join/x3E1UxwN">
-                                Ontario Commuter Train Reference (2024 Beta)
+                            <a href="https://github.com/bryandebourbon/OntarioCommuterTrainReference">
+                                Ontario Commuter Train Reference (2024 App Store Beta)
                             </a>
                         </strong>
                             Integrated Metrolinx API with MapKit, employing an ObservableObject ViewModel and Codable for live data visualization on a map, featuring custom sheet views for station selection, and leveraging APN with Firebase for real-time notifications on train updates.
@@ -82,10 +84,10 @@
             </article>
     </section>
     <section id="education">
-        <h1 style="margin-bottom: 0; text-decoration: underline;">Education</h1>
+        <h1 style="font-size: 26px; text-decoration: underline;">Education</h1>
         <ul>
             <li>Bachelor of Engineering Science: Electrical and Computer Engineering, University of Toronto (2014-2018)</li>
-            <li>Honors Bachelor of Science in Biology, Chemistry, and Computer Science, University of Toronto (2012-2016)</li>
+            <li>Bachelor of Science in Biology, Chemistry, and Computer Science, University of Toronto (2012-2016)</li>
         </ul>
     </section>
 
@@ -127,12 +129,7 @@
 
     </section>
 
-    <!-- <footer>
-        <p> <a href="privacy.html">Privacy Policy</a></p>
-    </footer> -->
-    
     <script>
-        // Optional: JavaScript to toggle the "More" section visibility
         function toggleMoreSection() {
             var moreSection = document.querySelector('.more-section');
             moreSection.style.display = moreSection.style.display === 'none' ? 'block' : 'none';
