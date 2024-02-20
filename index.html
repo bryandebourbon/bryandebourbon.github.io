@@ -3,60 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <title>Bryan de Bourbon Resume</title>
 </head>
 <body>
-
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1 style="font-size: 56px; text-decoration: underline; margin-bottom: 0;">Bryan de Bourbon</h1>
+        <i style="font-size: 18px;">Skilled in iOS, TypeScript, React Native, React.js, JavaScript, Python, Java, C, PostgreSQL, Prompt Engineering</i>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is where you can introduce yourself and talk about your skills and experiences.</p>
+    <section id="work-experience">
+        <h1 style="text-decoration: underline;">Recent Experience</h1>
+            <h2>Projects(Aug 2023 - Present)</h2>
+            <article>
+                <ul>
+                    <li>
+                        <strong>
+                            <a href="https://github.com/bryandebourbon/PicoCal">
+                                Customizable Music Reader (2023 Prototyping):
+                            </a>
+                        </strong>
+                            Developing an accessible music education app with resizable, high-contrast music notes and dynamic SVG for low-vision and young learners, powered by modern CSS, flex box, and vanilla JavaScript for interactive sheet music rendering across all web-enabled devices.
+                    </li>
+                
+                    <li>
+                        <strong>
+                            <a href="https://github.com/bryandebourbon/PicoCal">
+                                PicoCal for Apple Watch (2024 Beta)
+                            </a>
+                        </strong>
+                            A calendar app for iPhone and Apple Watch Widgets, integrating URLSession and Codable for GitHub API data to display commit history, alongside EventKit and HealthKit for comprehensive appointment and fitness tracking directly on the watch face.
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="https://github.com/bryandebourbon/PicoCal">
+                                Ontario Commuter Train Reference (2024 Beta)
+                            </a>
+                        </strong>
+                            Integrated Metrolinx API with MapKit, employing an ObservableObject ViewModel and Codable for live data visualization on a map, featuring custom sheet views for station selection, and leveraging APN with Firebase for real-time notifications on train updates.
+                    </li>
+                    <li>
+                        <strong>
+                            <a href="https://github.com/bryandebourbon/PicoCal">
+                                Holly Jolly Holiday Show: Seattle 2024 (3rd Annual)
+                            </a>
+                        </strong>
+                            Collaborated with 2 other music professionals to produce, host, and perform in a yearly community variety show at Chop Suey, a popular bar in Seattle. This initiative aimed to create a friendly and safe space for the younger generation of performers, providing them with practice opportunities and paid gigs.
+                        </li>
+                </ul>
+            </article>
+
+        <article>
+            <h2>Lead Software Engineer at Photo Sharing Startup (Jan 2023 - Aug 2023)</h2>
+            <ul>
+                <li>
+                    Managed AWS server infrastructure, including a PostgreSQL RDS. Instituted server-logging and server-swapping protocols to maintain high uptime. Used a React Native layer to build the UI for the app, and a native Swift/Android background threads for speedy uploading and delivery to photo delivery for users.
+                </li>
+                <li>
+                    Trusted with implementing advanced features like context based notifications (for sharing reminders based on GPS, timezone change, etc), developing performant and creative image upload algorithms, photo nudity detection, MySQL for on device data persistence, and redesigning the app for Android (to make photo sharing instantaneous)
+                </li>
+                <li>
+                    Conducted user experience trials to research where clients had misunderstandings in app controls. Used customer feedback and telemetry to develop UI layouts and app features that could increase user understanding and retention.
+                </li>
+            </ul>
+            
+        </article>
+
+        <article>
+            <h2>Software Engineer at Microsoft (Oct 2018 – Oct 2022) </h2>
+            <ul>
+                <li>
+                    On a full-stack experimental apps team, built MSPaint for web, the Viva Learning app for Teams, and other apps using functional React, GraphQL and Typescript. Enforced app Unit Testing via Jest, and reorganized JS and CSS with modern design standards like the SOLID principles and other OOP paradigms.
+                </li>
+                <li>
+                    Used Azure to host Microsoft Teams Bots, Servers and a PostgreSQL database. These bots sent HTTP requests with JSON to various Azure endpoints that ran CRUD operations on the database. Also improved app performance via front-end caching and optimistic loading.</li>
+                <li>
+                    Ran user studies to justify developer time on potential customer needs. Added user telemetry, server logging, and experimental flighting gates for dashboards to visualize daily active users, crash rate, etc.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="education">
+        <h1 style="text-decoration: underline;">Education</h1>
+        <ul>
+            <li>Bachelor of Engineering Science: Electrical and Computer Engineering, University of Toronto (2014-2018)</li>
+            <li>Honors Bachelor of Science in Biology, Chemistry, and Computer Science, University of Toronto (2012-2016)</li>
+        </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-            <a href="#">View Project</a>
-        </div>
-        <!-- Add more project sections as needed -->
+
+    <div class="show-more" onclick="document.querySelector('.more-section').style.display='block'">
+           <a> Show More</a>
+    </div>
+
+     <section class="more-section" style="display: none;">
+        <div class="show-more" onclick="document.querySelector('.more-section').style.display='none'">
+            <a> Show Less</a>
+     </div>
+        <article>
+            <h2>Software Developer at Citi (2017)</h2>
+            <ul>
+                <li>
+                    Redeveloped Citi’s main trading application to a cross-platform system using an Angular front-end and LAMP (Linux Apache MySQL Python) back-end.
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Java Software Developer at BlackBerry (2015 – 2016)</h2>
+            <ul>
+                <li>
+                    Developed system applications for BlackBerry’s Android devices using Java and Android Studio: Tips, Contacts and Music Player. Also, implemented low vision accessibility standards.
+                </li>
+            </ul>
+        </article>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 My Portfolio - <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    <!-- <footer>
+        <p> <a href="privacy.html">Privacy Policy</a></p>
+    </footer> -->
     
-
-    <script src="script.js"></script> <!-- Link to your JavaScript file for functionality -->
+    <script>
+        // Optional: JavaScript to toggle the "More" section visibility
+        function toggleMoreSection() {
+            var moreSection = document.querySelector('.more-section');
+            moreSection.style.display = moreSection.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    <script src="script.js"></script> 
 </body>
 </html>
